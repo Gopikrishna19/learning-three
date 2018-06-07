@@ -25,13 +25,6 @@ const getCamera = () => {
   return new THREE.PerspectiveCamera(35, aspectRatio, near, far);
 };
 
-const getBox = () => {
-  const size = new THREE.BoxGeometry(20, 20, 20);
-  const material = new THREE.MeshBasicMaterial({color: 0xff0000});
-
-  return new THREE.Mesh(size, material);
-};
-
 const render = () => {
   objects.box.rotation.y += 0.01;
 
@@ -46,11 +39,12 @@ const initScene = () => {
   camera = getCamera();
   camera.position.z = 100;
 
-  objects.box = getBox();
+  objects.box = getBox(20, 20, 20);
 
   scene.add(light);
   scene.add(camera);
-  scene.add(objects.box);
+
+  addObjects(scene, objects);
 
   render();
 };
