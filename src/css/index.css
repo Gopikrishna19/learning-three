@@ -1,7 +1,4 @@
-html,
-body {
-  font-family: sans-serif;
-}
+@import "reset.css";
 
 ul {
   list-style: none;
