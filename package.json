@@ -1,8 +1,13 @@
 {
-  "name": "learning-webgl",
+  "name": "learning-three",
   "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Learning three.js",
   "author": "Gopikrishna Sathyamurthy",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "static-server"
+  },
+  "dependencies": {
+    "@gs-utils/static-server": "0.2.1"
+  }
 }
