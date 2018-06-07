@@ -1,0 +1,33 @@
+html,
+body {
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+ul.list {
+  counter-reset: list;
+  padding: 0;
+}
+
+ul.list li .title {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+ul.list li .title:before {
+  counter-increment: list;
+  content: "Chapter " counter(list) " - ";
+}
+
+ul.sublist {
+  counter-reset: sublist;
+  padding: 0;
+}
+
+ul.sublist li:before {
+  counter-increment: sublist;
+  content: counter(list) "." counter(sublist) " - ";
+}
