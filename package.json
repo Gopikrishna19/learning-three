@@ -8,6 +8,6 @@
     "start": "static-server"
   },
   "dependencies": {
-    "@gs-utils/static-server": "0.2.1"
+    "@gs-utils/static-server": "0.2.2"
   }
 }
